@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Mini-Project Hotel Management</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>S</div>
+            <span><br />STAYEASE</span>
+          </div>
+          <div class="nav_menu_btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hotels">Hotel</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section_container header_container">
+        <p class="section__subheader">ABOUT US</p>
+        <h1>YOUR PERFECT<br />Tour Planner</h1>
+        <button class="btn">Start Your Tour</button>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="section_container booking_container">
+        <form action="/">
+          <div class="input__group">
+            <label for="place">Location</label>
+            <input type="text" placeholder="Search Your Location" />
+          </div>
+          <div class="input__group">
+            <label for="arrival and departure">Check in-Date</label>
+            <input type="datetime-local" placeholder="Arrival date" />
+          </div>
+          <div class="input__group">
+            <label for="Rooms and occupancy">Guests</label>
+            <input type="number" placeholder="No. of Guests" />
+          </div>
+          <button class="btn">
+            <a href="availability.html">Check Availabilty</a>
+          </button>
+          <button class="btn">
+            <a href="billing.html">Book Now </a>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section_container about_container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="lux.jpeg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-user-line"></i></span>
+            <h4>Strong Team</h4>
+            <p>
+              Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="tour 2.jpeg.jpeg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Luxury Room</h4>
+            <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Discover Our Underground</h2>
+          <p class="section__description">
+            Welcome to a hidden realm of extraordinary accommodations where
+            luxury, comfort, and adventure converge. Our underground hotels
+            offer an unparalleled escape from the ordinary, inviting you to
+            explore a subterranean world of wonders.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel__container" id="hotels">
+      <p class="section__subheader">HOTELS</p>
+      <h2 class="section__header">Top Hotels in the Region</h2>
+      <div class="hotel__grid">
+        <div class="hotel__card">
+          <img src="windflower.webp" alt="hotel" />
+          <div class="hotel_card_details">
+            <div>
+              <h4>Windflower Hall, An Oberoi Resort, Shimla</h4>
+              <p>Well-appointed rooms designed for guests who desire a more along with a superb location.</p>
+            </div>
+            <h3>₹ 34,200<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="hotel__card">
+          <img src="imperial.jpg" alt="hotel" />
+          <div class="hotel_card_details">
+            <div>
+              <h4>The Imperial, New Delhi</h4>
+              <p>Hotel Imperial offers an outdoor pool and health club. Guests can enjoy spa services and 7 dining options.</p>
+            </div>
+            <h3>₹ 22,356<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="hotel__card">
+          <img src="taj hotel.webp" alt="hotel" />
+          <div class="hotel_card_details">
+            <div>
+              <h4>Taj Cidade De Goa Horizon, North Goa</h4>
+              <p>
+                North Goa, Taj Resort & Convention Centre Goa features luxurious rooms offering suitable choices to guests. With only 28 km and 45 mins drive from the Dabolim airport the hotel is located in the heart of Goa.
+              </p>
+            </div>
+            <h3>₹ 19,000<span>/night</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section_container feature_container" id="feature">
+      <p class="section__subheader">FACILITIES</p>
+      <h2 class="section__header">Core Features</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-thumb-up-line"></i></span>
+          <h4>Have High Rating</h4>
+          <p>
+            We take pride in curating a selection of hotels that consistently
+            receive high ratings and positive reviews.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-time-line"></i></span>
+          <h4>Quite Hours</h4>
+          <p>
+            We understand that peace and uninterrupted rest are essential for a
+            rejuvenating experience.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-map-pin-line"></i></span>
+          <h4>Best Location</h4>
+          <p>
+            At our hotel booking website, we take pride in offering
+            accommodations in the most prime and sought-after locations.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-close-circle-line"></i></span>
+          <h4>Free Cancellation</h4>
+          <p>
+            We understand that travel plans can change unexpectedly, which is
+            why we offer the flexibility of free cancellation.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-wallet-line"></i></span>
+          <h4>Payment Options</h4>
+          <p>
+            Our hotel booking website offers a range of convenient payment
+            options to suit your preferences.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-coupon-line"></i></span>
+          <h4>Special Offers</h4>
+          <p>
+            Whether you're planning a romantic getaway, or a business trip, our
+            carefully curated special offers cater to all your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+        <ul class="menu__banner">
+          <li>
+            <span><i class="ri-file-text-line"></i></span>
+            <h4>84k</h4>
+            <p>Projects are Completed</p>
+          </li>
+          <li>
+            <span><i class="ri-user-line"></i></span>
+            <h4>10M</h4>
+            <p>Active Around World</p>
+          </li>
+          <li>
+            <span><i class="ri-function-line"></i></span>
+            <h4>02k</h4>
+            <p>Categories Served</p>
+          </li>
+          <li>
+           <span><i class="ri-lightbulb-flash-line"></i></span>
+            <h4>100M</h4>
+            <p>Ideas Raised Funds</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section_container footer_container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div>S</div>
+            <span>STAY<br />EASE</span>
+          </div>
+          <p class="section__description"> 
+            Thank you for choosing to book your stay with us. We're thrilled to have you and can't wait to make your experience unforgettable!
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="#">Online Booking</a></li>
+            <li><a href="#">Room Customization</a></li>
+            <li><a href="#">Virtual Tours</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Concierge Services</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+91 9876543210</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>info@stayeasebookings.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h5>Location</h5>
+                <p>First St. IND</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      config ={
+    enableTime: true,
+    dateFormat: "d-m-Y H:i",
+}
+    flatpickr("input[type=datetime-local]", config);
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
