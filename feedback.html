@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="feedback_form">
+    <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="logo nav__logo">
+              <div>S</div>
+              <span><br />STAYEASE</span>
+            </div>
+            <div class="nav_menu_btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hotels">Hotel</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container_positive">
+        <h1 class="GR">Guest Reviews</h1>
+        <div class="review">
+            <h3>Mr.Ansh Malhotra</h3>
+            <p>★★★★★</p>
+            <p>"Amazing experience! The staff was incredibly welcoming and the rooms were spotless. Highly recommend!"</p>
+        </div>
+        <div class="review">
+            <h3>Ms.Anushka</h3>
+            <p>★★★★☆</p>
+            <p>"Great location and comfortable stay. The breakfast options were plentiful and delicious."</p>
+        </div>
+        <div class="review">
+            <h3>Mr.Ankush Verma</h3>
+            <p>★★★★★</p>
+            <p>"A true luxury experience! The spa services were top-notch and the view from our room was breathtaking."</p>
+        </div>
+        <!-- Add more reviews as needed -->
+    </div>
+<div id="feedback_img">
+    <div class="container_form">
+        <h1  class="Hff">Hotel Feedback Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required
+            placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+            placeholder="Enter Your E-mail">
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required
+            placeholder="Give your ratings">
+                <option value="">Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <button id="btn_feedback" type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
